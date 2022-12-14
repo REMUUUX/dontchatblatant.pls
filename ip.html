@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles/IPstyles.css" />
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ip.html">Ip lookup</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div id="particles-js">   </div>
+        <h1 id="ez">IP</h1>
+        <input type="text" id="textbox">
+        <button id="lookup" type="button">IP lookup</button>
+        <p id="output"></p>
+      
+    <script src="js/particles.js"></script>
+<script src="js/IPscript.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+  </body>
+</html>
