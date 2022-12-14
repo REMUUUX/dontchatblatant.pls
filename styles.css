@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body {
+  font-family: lato, ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  background-color:rgb(18, 18, 18)
+}
+
+.lead {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 60px;
+  line-height: 55px;
+  color:#fff;
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+.cringe {
+  color: red;
+}
+
+.name2{
+  font-size: 93px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration-color: #fff;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-left: 100px;
+  color:white;
+}
+
+.blatant {
+  color: red;
+}
+
+.name {
+  font-size: 94px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration-color: #fff;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-left: 100px;
+  color:white;
+}
+
+
+
+@media (max-width: 425px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .lead {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+
+
+
+
+
+
+#box1, #box3 {
+  float: left;
+	width:350px;
+	height:230px;
+	margin:10px;
+	padding:20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left: 50px;
+}
+#box2{
+  float: left;
+	width:350px;
+	height:230px;
+	margin:10px;
+	padding:0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left: 50px;
+}
+
+#box1, #box2, #box3 {
+	background:rgb(24, 27, 35)
+}
+
+#box1 p, #box2 p, #box3 p {
+	white-space:pre;
+	font-size:medium;
+	font-family:monospace;
+  color:#fff;
+  text-align: center;
+}
+#textbox{
+	width:500px;
+	height:300px;
+	margin:10px;
+	padding:10px;
+   margin-left: 420px;
+}
+#textbox p {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
